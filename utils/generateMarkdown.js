@@ -1,6 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const fs = require("fs");
 function renderLicenseBadge(license) {
   if (!license) {
     return ``;
@@ -22,6 +21,9 @@ function renderLicenseLink(license) {
   }
   if (license === "CC--0") {
     return `https://creativecommons.org/licenses/by-nd/4.0`;
+  }
+  if (license === "none") {
+    return " ";
   }
 }
 
@@ -45,10 +47,10 @@ ${renderLicenseBadge(data.licenses)}
 ## Table of Contents:
 * [Description](#Description)
 * [Installation](#Installation)
-* [Usage]
-*
-*
-*
+* [Usage](#Usage of Project)
+* [Licenses]()
+* [Questions/Contact](Questions? Contact Me!)
+* [Project Links](Project Links)
 
 ## Description
 
