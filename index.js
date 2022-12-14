@@ -31,7 +31,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is your github account?",
+    message: "What is your github username?",
     name: "github",
   },
   {
@@ -45,10 +45,10 @@ const questions = [
     name: "project",
   },
   {
-    type: "checkbox",
+    type: "list",
     message: "Choose a License if applicable.",
     name: "license",
-    choices: ["", "", ""],
+    choices: ["MIT", "GPL", "CC--0", "none"],
   },
 ];
 
